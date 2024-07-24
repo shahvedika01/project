@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #3253a8;
+            margin: 0;
+        }
+        .card {
+            background: #0cd8ce;
+            border-radius: 10px;
+            box-shadow: 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            text-align: center;
+            padding: 20px;
+            
+        }
+        .heart {
+            color: red;
+            font-size: 50px;
+        }
+        .message {
+            font-size: 20px;
+            margin: 20px 0;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: rgb(235, 243, 242);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="heart">&#x1F496;</div>
+        <h1>Happy Birthday baby!</h1>
+        <p class="message hidden" id="loveMessage">I love you so much dholu,happy birthday loveee! (smoochesss & hugs)</p>
+        <button class="button" id="revealButton">touch this cuttiee</button>
+    </div>
+    <script>
+        document.getElementById('revealButton').onclick = function() {
+            document.getElementById('loveMessage').classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
